@@ -2,17 +2,25 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
   </div>
+  <p>
+    <input type="text" v-model="inputMsg" placeholder="Enter the Subject" />
+    <button>Submit</button>
+  </p>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
+import { ref } from 'vue';
+export default {
   name: 'HelloWorld',
-  props: {
-    msg: String,
-  },
-});
+  props: ['msg'],
+  setup() {
+    const inputMsg = ref('');
+
+    return {
+      inputMsg,
+    };
+  }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

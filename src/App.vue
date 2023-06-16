@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld msg="Welcome to Your Ultimate Training "/>
+  <HelloWorld msg = "Welcome to Your Ultimate Training"/>
 </template>
 
 <script lang="ts">
