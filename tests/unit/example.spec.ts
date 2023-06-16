@@ -11,7 +11,9 @@ describe('HelloWorld.vue', () => {
   })
 
   it('HelloWorld should have h1, button, expect', () => {
-    const wrapper = shallowMount(HelloWorld)
-    expect(wrapper.find('h1')).toBeTruthy()
+    const wrapper = shallowMount(HelloWorld);
+    expect(wrapper.find('h1').exists()).toBeTruthy();
+    expect(wrapper.find('input').exists()).toBeTruthy();
+    expect(wrapper.find('button').exists()).toBeTruthy();
   })
 })
