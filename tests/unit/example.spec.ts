@@ -10,10 +10,20 @@ describe('HelloWorld.vue', () => {
     expect(wrapper.text()).toMatch(msg)
   })
 
-  it('HelloWorld should have h1, button, expect', () => {
+  it('HelloWorld should have h1, select with options, button, and p', () => {
     const wrapper = shallowMount(HelloWorld);
     expect(wrapper.find('h1').exists()).toBeTruthy();
-    expect(wrapper.find('input').exists()).toBeTruthy();
+    expect(wrapper.find('select').exists()).toBeTruthy();
+
+    const selectOptions = wrapper.findAll('select option');
+    expect(selectOptions.length).toBe(wrapper.vm.subjects.length);
+
+    wrapper.vm.subjects.forEach((subject:string, index:number) => {
+      expect(selectOptions[index].text()).toBe(subject);
+    });
+
     expect(wrapper.find('button').exists()).toBeTruthy();
+    expect(wrapper.find('button').text()).toBe('Submit');
+    expect(wrapper.find('p').exists()).toBeTruthy();
   })
 })
