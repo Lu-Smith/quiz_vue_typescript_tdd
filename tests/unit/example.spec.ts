@@ -9,4 +9,9 @@ describe('HelloWorld.vue', () => {
     })
     expect(wrapper.text()).toMatch(msg)
   })
+
+  it('HelloWorld should have h1, button, expect', () => {
+    const wrapper = shallowMount(HelloWorld)
+    expect(wrapper.find('h1')).toBeTruthy()
+  })
 })
