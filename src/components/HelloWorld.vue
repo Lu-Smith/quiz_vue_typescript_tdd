@@ -3,10 +3,12 @@
     <h1>{{ msg }}</h1>
   </div>
   <p>
-    <input type="text" v-model="inputMsg" placeholder="Enter the Subject" />
+    <select type="text" v-model="selectedSubject" placeholder="Select your subject..." >
+      <option v-for="subject in subjects" :value="subject" :key="subject">{{ subject  }}</option>
+    </select>
     <button>Submit</button>
   </p>
-  <p>{{ inputMsg  }}</p>
+  <p>{{ selectedSubject  }}</p>
 </template>
 
 <script lang="ts">
@@ -15,29 +17,15 @@ export default {
   name: 'HelloWorld',
   props: ['msg'],
   setup() {
-    const inputMsg = ref('');
+    const selectedSubject = ref('');
+    const subjects = ref(['Vue', 'Angular', 'TypeScript', 'React', 'JavaScript', 'C++', 'TDD'])
 
     return {
-      inputMsg,
+      selectedSubject, subjects
     };
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style>
 </style>
