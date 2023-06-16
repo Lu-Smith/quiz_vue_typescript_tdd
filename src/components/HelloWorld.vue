@@ -6,6 +6,7 @@
     <input type="text" v-model="inputMsg" placeholder="Enter the Subject" />
     <button>Submit</button>
   </p>
+  <p>{{ inputMsg  }}</p>
 </template>
 
 <script lang="ts">
