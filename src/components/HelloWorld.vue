@@ -1,14 +1,15 @@
 <template>
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <select type="text" v-model="selectedSubject" placeholder="Select your subject..." >
+        <option v-for="subject in subjects" :value="subject" :key="subject">{{ subject  }}</option>
+      </select>
+  </nav>
   <div class="hello">
     <h1>{{ msg }}</h1>
   </div>
-  <p>
-    <select type="text" v-model="selectedSubject" placeholder="Select your subject..." >
-      <option v-for="subject in subjects" :value="subject" :key="subject">{{ subject  }}</option>
-    </select>
-    <button>Submit</button>
-  </p>
-  <p>{{ selectedSubject  }}</p>
+  <p> {{ selectedSubject }}</p>
+  <router-view/>
 </template>
 
 <script lang="ts">

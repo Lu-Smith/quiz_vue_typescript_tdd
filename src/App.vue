@@ -1,10 +1,5 @@
 <template>
- 
-  <nav>
-    <router-link to="/">Home</router-link> |
     <HelloWorld msg = "Welcome to Your Ultimate Training"/>
-  </nav>
-  <router-view/>
 </template>
 
 <script lang="ts">
