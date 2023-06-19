@@ -1,9 +1,8 @@
 <template>
-  <HelloWorld msg = "Welcome to Your Ultimate Training"/>
+ 
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link :to="{name:'Vue'}">Vue</router-link>
-    <router-link :to="{name:'TDD'}">TDD</router-link>
+    <HelloWorld msg = "Welcome to Your Ultimate Training"/>
   </nav>
   <router-view/>
 </template>
