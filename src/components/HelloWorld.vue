@@ -4,7 +4,7 @@
       <select v-model="selectedSubject"  placeholder="Select your subject..." @change="navigateToSubject">
         <option disabled selected value="">Select your subject...</option>
         <option v-for="subject in subjects" :value="subject" :key="subject" >
-          {{ subject  }}
+          {{ subject }}
         </option>
       </select>
   </nav>
@@ -27,9 +27,8 @@ export default {
     const router = inject('router') as Router;
     const navigateToSubject = () => {
       if (selectedSubject.value) {
-        // Assuming you have access to the router instance
-        // Replace `router` with your actual router instance
         router.push(`/${selectedSubject.value}`);
+        selectedSubject.value = ''
       }
     };
     return {
