@@ -15,37 +15,37 @@ const routes = [
     component: HomePage
   },
   {
-    path: '/vue',
+    path: '/Vue',
     name: 'Vue',
     component: Vue
   },
   {
-    path: '/angular',
+    path: '/Angular',
     name: 'Angular',
     component: Angular
   },
   {
-    path: '/typescript',
+    path: '/Typescript',
     name: 'TypeScript',
     component: TypeScript
   },
   {
-    path: '/tdd',
+    path: '/TDD',
     name: 'TDD',
     component: TDD
   },
   {
-    path: '/cplusplus',
+    path: '/C++',
     name: 'CPlusPlus',
     component: CPlusPlus
   },
   {
-    path: '/react',
+    path: '/React',
     name: 'React',
     component: React
   },
   {
-    path: '/javascript',
+    path: '/Javascript',
     name: 'JavaScript',
     component: JavaScript
   },
