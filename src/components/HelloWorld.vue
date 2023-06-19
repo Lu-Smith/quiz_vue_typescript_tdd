@@ -28,7 +28,7 @@ export default {
     const navigateToSubject = () => {
       if (selectedSubject.value) {
         router.push(`/${selectedSubject.value}`);
-        selectedSubject.value = ''
+        selectedSubject.value = '';
       }
     };
     return {
