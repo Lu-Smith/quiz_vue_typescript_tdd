@@ -4,11 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     padding: 20px;
+    background-color: rgb(11, 1, 20);
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(219, 216, 216);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    margin-top: 60px;
 }
 
 h1 {
@@ -22,4 +28,14 @@ h2 {
     left: 0;
     right: 0;
     font-family: 'El Messiri', sans-serif;
+}
+
+a {
+    color: rgb(173, 170, 170);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(231, 163, 248);
+    text-decoration: none;
 }
