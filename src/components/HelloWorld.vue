@@ -1,10 +1,10 @@
 <template>
     <nav>
       <router-link to="/">Home</router-link> |
-      <select v-model="selectedSubject"  placeholder="Select your subject...">
+      <select v-model="selectedSubject"  placeholder="Select your subject..." @change="navigateToSubject">
         <option disabled selected value="">Select your subject...</option>
         <option v-for="subject in subjects" :value="subject" :key="subject" >
-          <router-link :to="`/${subject}`">{{ subject  }}</router-link>
+          {{ subject  }}
         </option>
       </select>
   </nav>
@@ -15,16 +15,25 @@
 </template>
 
 <script lang="ts">
-import { ref } from 'vue';
+import { ref, inject } from 'vue';
+import { Router } from 'vue-router';
+
 export default {
   name: 'HelloWorld',
   props: ['msg'],
   setup() {
     const selectedSubject = ref('');
     const subjects = ref(['Vue', 'Angular', 'TypeScript', 'React', 'JavaScript', 'C++', 'TDD'])
-
+    const router = inject('router') as Router;
+    const navigateToSubject = () => {
+      if (selectedSubject.value) {
+        // Assuming you have access to the router instance
+        // Replace `router` with your actual router instance
+        router.push(`/${selectedSubject.value}`);
+      }
+    };
     return {
-      selectedSubject, subjects
+      selectedSubject, subjects, navigateToSubject
     };
   }
 }
