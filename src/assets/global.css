@@ -8,9 +8,9 @@
 
 body {
     padding: 20px;
-    background-color: rgb(11, 1, 20);
+    background: #222831; 
     font-family: 'Montserrat', sans-serif;
-    color: rgb(219, 216, 216);
+    color: #eeeeee; 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
@@ -28,22 +28,39 @@ h2 {
     left: 0;
     right: 0;
     font-family: 'El Messiri', sans-serif;
+    color: #ff5722;
 }
 
 p { 
     margin: 20px 0;
 }
 
+p strong { 
+    color: #ff5722;
+    font-size: 20px;
+}
+
 a {
-    color: rgb(173, 170, 170);
+    color: #eeeeee;
     text-decoration: none;
 }
 
 a:hover {
-    color: rgb(231, 163, 248);
+    color: #ff5722; 
     text-decoration: none;
 }
 
 button {
     padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+    border: none;
+    transition: 200ms all ease-in-out;
+}
+
+button:hover {
+    border-radius: 10px;
+    box-shadow: none;
+    color: #ff5722; 
+    opacity: 0.7;
 }

@@ -1,9 +1,9 @@
 <template>
   <h2>{{ selectedSubject }}</h2>
   <p v-if="!quizCompleted">Welcome to ultimate {{ selectedSubject }} quiz</p>
-  <p v-else>Your score is: <strong>{{ finalScore }}%</strong></p>
+  <p v-else>Your score: <strong>{{ finalScore }}%</strong></p>
   <div>{{ score }}/{{ numberOfQuestions }}</div>
-  <div v-if="!quizCompleted">
+  <div v-if="!quizCompleted" class="quiz">
     <div class="question"> {{ getCurrentQuestion.question }}</div>
     <div class="options">
       <label 
@@ -65,15 +65,19 @@ const setAnswer = () => {
   } 
   answeredQuestion.value = !answeredQuestion.value
 }
- 
-
-
 </script>
 
 <style>
+.quiz {
+  width: 40%;
+  background: #2d4059; 
+  padding: 10px 20px 30px 20px;
+  margin: 50px auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
 .question {
   margin-top: 20px;
-  color: rgb(173, 170, 170);
   font-weight: 700;
 }
 .options {
@@ -83,13 +87,32 @@ const setAnswer = () => {
   align-items: flex-start;
   justify-content: center;
   gap: 10px;
+
+  
+}
+
+label {
+  padding: 15px 20px;
+  border-radius: 20px;
+  transition: 200ms all ease-in-out;
+  width: 100%;
+  text-align: left;
+}
+
+label:hover {
+  background: rgba(100, 100, 100, 0.5);
+}
+
+input{
+  padding: 10px 20px;
+  margin-right: 20px
 }
 .correct {
   background: rgb(26, 138, 63);
 }
 
 .wrong {
-  background: red;
+  border: 4px solid #ff5722;
 }
 
 .disabled {
