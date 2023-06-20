@@ -3,9 +3,10 @@
   <p v-if="!quizCompleted">Welcome to ultimate {{ selectedSubject }} quiz</p>
   <p v-else>Your score is: <strong>{{ finalScore }}%</strong></p>
   <div>{{ score }}/{{ numberOfQuestions }}</div>
-  <div v-for="(question, index) in vueQuestions" :key="index">
-    <p>{{ question.question }}</p>
+  <div>
+    <div> {{ getCurrentQuestion.question }}</div>
   </div>
+ 
 </template>
 
 <script lang="ts" setup>
@@ -26,6 +27,19 @@ const score = computed(() => {
   return value
 })
 const finalScore =  score.value/numberOfQuestions.value*100
+
+const getCurrentQuestion = computed(() => {
+  let question = vueQuestions[currentQuestion.value]
+  return question
+})
+
+const nextQuestion = () => {
+  if(currentQuestion.value < vueQuestions.length -1) {
+    currentQuestion.value++
+  } else {
+    quizCompleted.value = true
+  }
+}
 
 
 </script>
