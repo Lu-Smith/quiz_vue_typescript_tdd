@@ -50,5 +50,12 @@ select {
     width: 280px;
     padding: 8px;
   }
+}
+
+@media screen and (max-width: 480px) {
+  select {
+    width: 200px;
+    padding: 5px;
   }
+}
 </style>

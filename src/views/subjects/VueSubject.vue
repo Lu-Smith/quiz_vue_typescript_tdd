@@ -121,7 +121,7 @@ input{
 
 @media screen and (max-width: 700px) {
   .quiz {
-  width: 500px;
+  width: 450px;
   padding: 8px 18px 25px 18px;
   margin: 40px auto;
   border-radius: 15px;
@@ -149,6 +149,41 @@ input{
 
 .wrong {
   border: 3px solid #ff5722;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+  .quiz {
+  width: 95%;
+  padding: 5px 15px 20px 15px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.question {
+  font-weight: 500;
+}
+
+.options {
+  margin: 10px;
+  gap: 5px;
+  font-size: 12px;
+}
+
+label {
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+input{
+  padding: 5px 10px;
+  margin-right: 10px
+}
+
+.wrong {
+  border: 2px solid #ff5722;
 }
 
 }
