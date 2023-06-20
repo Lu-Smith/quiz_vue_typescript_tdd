@@ -41,7 +41,14 @@ export default {
 <style>
 
 select {
-width: 300px;
-padding: 10px;
+  width: 300px;
+  padding: 10px;
 }
+
+@media screen and (max-width: 700px) {
+  select {
+    width: 280px;
+    padding: 8px;
+  }
+  }
 </style>

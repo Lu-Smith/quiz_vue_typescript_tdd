@@ -1,6 +1,6 @@
 <template>
   <h2>{{ selectedSubject }}</h2>
-  <p v-if="!quizCompleted">Welcome to ultimate {{ selectedSubject }} quiz</p>
+  <p v-if="!quizCompleted">{{ selectedSubject }} quiz</p>
   <p v-else>Your score: <strong>{{ finalScore }}%</strong></p>
   <div>{{ score }}/{{ numberOfQuestions }}</div>
   <div v-if="!quizCompleted" class="quiz">
@@ -76,10 +76,12 @@ const setAnswer = () => {
   border-radius: 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
+
 .question {
   margin-top: 20px;
   font-weight: 700;
 }
+
 .options {
   margin: 20px;
   display: flex;
@@ -87,8 +89,6 @@ const setAnswer = () => {
   align-items: flex-start;
   justify-content: center;
   gap: 10px;
-
-  
 }
 
 label {
@@ -117,6 +117,40 @@ input{
 
 .disabled {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 700px) {
+  .quiz {
+  width: 500px;
+  padding: 8px 18px 25px 18px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.question {
+  font-weight: 600;
+}
+
+.options {
+  margin: 15px;
+  gap: 8px;
+}
+
+label {
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+input{
+  padding: 8px 15px;
+  margin-right: 18px
+}
+
+.wrong {
+  border: 3px solid #ff5722;
+}
+
 }
 
 </style>
