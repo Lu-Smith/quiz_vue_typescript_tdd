@@ -1,7 +1,10 @@
 <template>
   <h2>{{ selectedSubject }}</h2>
   <p v-if="!quizCompleted">{{ selectedSubject }} quiz</p>
-  <p v-else>Your score: <strong>{{ finalScore }}%</strong></p>
+  <div v-else>
+    <p>Your score: <strong>{{ finalScore }}%</strong></p>
+    <button class="playAgain" @click="playAgain">Play again</button>
+  </div>
   <div>{{ score }}/{{ numberOfQuestions }}</div>
   <div v-if="!quizCompleted" class="quiz">
     <div class="question"> {{ getCurrentQuestion.question }}</div>
@@ -65,6 +68,18 @@ const setAnswer = () => {
   } 
   answeredQuestion.value = !answeredQuestion.value
 }
+
+const playAgain = () => {
+  vueQuestions.forEach((q) => {
+    q.selected = null;
+  });
+  quizCompleted.value = false
+  correctAnswer.value = false
+  answeredQuestion.value = false
+  currentQuestion.value = 0
+  score.value = 0
+  finalScore.value = 0
+}
 </script>
 
 <style>
@@ -117,6 +132,10 @@ input{
 
 .disabled {
   opacity: 0.5;
+}
+
+.playAgain {
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 700px) {

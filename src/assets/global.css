@@ -61,7 +61,7 @@ button {
 button:hover {
     border-radius: 10px;
     box-shadow: none;
-    color: #ff5722; 
+    background-color: #ff5722; 
     opacity: 0.7;
 }
 
