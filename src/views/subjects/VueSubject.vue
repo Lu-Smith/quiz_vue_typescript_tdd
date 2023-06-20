@@ -40,9 +40,7 @@ const selectedSubject = ref('Vue')
 const numberOfQuestions = ref(vueQuestions.length)
 const currentQuestion = ref(0)
 const score = ref(0)
-
-
-const finalScore = ( score.value / numberOfQuestions.value)*100
+const finalScore = ref(0)
 
 const getCurrentQuestion = computed(() => {
   let question = vueQuestions[currentQuestion.value]
@@ -63,6 +61,7 @@ const setAnswer = () => {
   if (getCurrentQuestion.value.selected === getCurrentQuestion.value.answer) {
     score.value++
     correctAnswer.value = true
+    finalScore.value = ( score.value / numberOfQuestions.value)*100
   } 
   answeredQuestion.value = !answeredQuestion.value
 }
