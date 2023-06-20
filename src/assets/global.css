@@ -30,6 +30,10 @@ h2 {
     font-family: 'El Messiri', sans-serif;
 }
 
+p { 
+    margin-top: 20px;
+}
+
 a {
     color: rgb(173, 170, 170);
     text-decoration: none;
