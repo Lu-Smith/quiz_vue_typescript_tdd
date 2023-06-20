@@ -1,6 +1,6 @@
 const vueQuestions = [
     {
-        "question": "What is Vue.js",
+        "question": "What is Vue.js?",
         "answer": 0,
         "options": [
             "An open-source JavaScript framework.",
@@ -11,7 +11,7 @@ const vueQuestions = [
         "selected": null
     },
     {
-        "question": "Vue was develpoed by",
+        "question": "Vue was develpoed by...",
         "answer": 2,
         "options": [
             "Brendan Eich",
@@ -22,7 +22,7 @@ const vueQuestions = [
         "selected": null
     },
     {
-        "question": "Vue is based on",
+        "question": "What Vue is based on?",
         "answer": 2,
         "options": [
             "MVC (Model-View-Controller) pattern",
@@ -44,7 +44,7 @@ const vueQuestions = [
         "selected": null
     },
     {
-        "question": "What are computed properties in Vue.js",
+        "question": "What are computed properties in Vue.js?",
         "answer": 0,
         "options": [
             "Properties that are calculated based on other properties in the component.",
