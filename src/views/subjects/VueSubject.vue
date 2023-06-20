@@ -17,16 +17,17 @@
         <input 
           type="radio" 
           :name="getCurrentQuestion.question" 
-          :value="index" v-model="getCurrentQuestion.selected" 
-          :disabled="Boolean(getCurrentQuestion.selected)" 
-          :change="setAnswer">
+          :value="index" 
+          v-model="getCurrentQuestion.selected" 
+          :disabled="getCurrentQuestion.selected !== null"
+          @change="setAnswer">
         <span>{{ option }}</span>
       </label>
     </div>
     <button 
       @click="nextQuestion"
-      :disabled="!getCurrentQuestion.selected">
-      {{ getCurrentQuestion.index == (vueQuestions.length - 1) ? 'Finish' : (getCurrentQuestion.selected == null ? 'Select an option' : 'Next Question')}}
+      :disabled="getCurrentQuestion.selected === null">
+      {{ getCurrentQuestion.index === (vueQuestions.length - 1) ? 'Finish' :  'Next Question'}}
     </button>
   </div>
  
@@ -40,16 +41,9 @@ const quizCompleted = ref(false)
 const selectedSubject = ref('Vue')
 const numberOfQuestions = ref(vueQuestions.length)
 const currentQuestion = ref(0)
-const score = computed(() => {
-  let value = 0
-  vueQuestions.map(q => {
-    if (q.selected == q.answer) {
-      value++
-    }
-  })
-  return value
-})
-const finalScore =  score.value/numberOfQuestions.value*100
+const score = ref(0)
+
+const finalScore = ( score.value / numberOfQuestions.value)*100
 
 const getCurrentQuestion = computed(() => {
   let question = vueQuestions[currentQuestion.value]
@@ -64,11 +58,11 @@ const nextQuestion = () => {
     quizCompleted.value = true
   }
 }
-const setAnswer = (e: Event) => {
-  vueQuestions[currentQuestion.value].selected = (e.target as HTMLInputElement).value !== ""
-    ? Number((e.target as HTMLInputElement).value)
-    : null;
-};
+const setAnswer = () => {
+  if (getCurrentQuestion.value.selected === getCurrentQuestion.value.answer) {
+    score.value++
+  }
+}
  
 
 
@@ -94,6 +88,10 @@ const setAnswer = (e: Event) => {
 
 .wrong {
   background: red;
+}
+
+.disabled {
+  opacity: 0.5;
 }
 
 </style>
