@@ -1,8 +1,8 @@
-declare const vueQuestions: {
+declare const VueQuestions: {
     question: string;
     answer: number;
     options: string[];
-    selected: null;
+    selected: null | number;
 }[];
 
-export default vueQuestions;
+export default VueQuestions;

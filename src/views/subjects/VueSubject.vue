@@ -5,6 +5,24 @@
   <div>{{ score }}/{{ numberOfQuestions }}</div>
   <div>
     <div> {{ getCurrentQuestion.question }}</div>
+    <div class="options">
+      <label 
+        v-for="(option, index) in getCurrentQuestion.options" 
+        :key="index" 
+        :class="`option ${
+          getCurrentQuestion.selected == index ? (index == getCurrentQuestion.answer ? 'correct' : 'wrong') : ''
+        } ${
+          getCurrentQuestion.selected != null && index != getCurrentQuestion.selected ? 'disabled' : ''
+        }`">
+        <input 
+        type="radio" 
+        :name="getCurrentQuestion.question" 
+        :value="index" v-model="getCurrentQuestion.selected" 
+        :disabled="Boolean(getCurrentQuestion.selected)" 
+        :change="setAnswer">
+        <span>{{ option }}</span>
+      </label>
+    </div>
   </div>
  
 </template>
@@ -40,6 +58,12 @@ const nextQuestion = () => {
     quizCompleted.value = true
   }
 }
+const setAnswer = (e: Event) => {
+  vueQuestions[currentQuestion.value].selected = (e.target as HTMLInputElement).value !== ""
+    ? Number((e.target as HTMLInputElement).value)
+    : null;
+};
+ 
 
 
 </script>
