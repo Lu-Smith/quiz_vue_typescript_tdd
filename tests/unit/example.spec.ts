@@ -16,12 +16,10 @@ describe('HelloWorld.vue', () => {
     expect(wrapper.find('select').exists()).toBeTruthy();
 
     const selectOptions = wrapper.findAll('select option');
-
-
-      expect(selectOptions.length).toBe(wrapper.vm.subjects.length + 1);
-      wrapper.vm.subjects.forEach((subject:string, index:number) => {
-        expect(selectOptions[index + 1].text()).toBe(subject);
-      });
+    expect(selectOptions.length).toBe(wrapper.vm.subjects.length + 1);
+    wrapper.vm.subjects.forEach((subject:string, index:number) => {
+      expect(selectOptions[index + 1].text()).toBe(subject);
+    });
     
 
   })
