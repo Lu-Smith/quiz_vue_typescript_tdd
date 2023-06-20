@@ -9,7 +9,7 @@
       <label 
         v-for="(option, index) in getCurrentQuestion.options" 
         :key="index" 
-        :class="`options, ${getCurrentQuestion.selected === index && correctAnswer ? 'correct' : ''}
+        :class="`options, ${getCurrentQuestion.selected === index && correctAnswer ? 'correct' : ''}  ${getCurrentQuestion.selected === index && !correctAnswer ? 'wrong' : ''}
         ${answeredQuestion ? 'disabled' : ''}`">
         <input 
           type="radio" 
@@ -133,8 +133,9 @@ input{
 }
 
 .options {
-  margin: 15px;
+  margin: 15px 10px;
   gap: 8px;
+  font-size: 14px;
 }
 
 label {
@@ -144,7 +145,7 @@ label {
 
 input{
   padding: 8px 15px;
-  margin-right: 18px
+  margin-right: 18px;
 }
 
 .wrong {
@@ -164,6 +165,8 @@ input{
 
 .question {
   font-weight: 500;
+  font-size: 13px;
+  padding: 0 20px;
 }
 
 .options {
@@ -179,7 +182,7 @@ label {
 
 input{
   padding: 5px 10px;
-  margin-right: 10px
+  margin-right: 10px;
 }
 
 .wrong {
