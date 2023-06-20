@@ -69,7 +69,7 @@ const setAnswer = () => {
 
 <style>
 .quiz {
-  width: 40%;
+  width: 600px;
   background: #2d4059; 
   padding: 10px 20px 30px 20px;
   margin: 50px auto;
