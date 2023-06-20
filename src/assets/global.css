@@ -43,3 +43,8 @@ a:hover {
     color: rgb(231, 163, 248);
     text-decoration: none;
 }
+
+button {
+    color: white;
+    padding: 10px 15px;
+}

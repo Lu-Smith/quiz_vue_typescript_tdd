@@ -3,8 +3,8 @@
   <p v-if="!quizCompleted">Welcome to ultimate {{ selectedSubject }} quiz</p>
   <p v-else>Your score is: <strong>{{ finalScore }}%</strong></p>
   <div>{{ score }}/{{ numberOfQuestions }}</div>
-  <div>
-    <div> {{ getCurrentQuestion.question }}</div>
+  <div v-if="!quizCompleted">
+    <div class="question"> {{ getCurrentQuestion.question }}</div>
     <div class="options">
       <label 
         v-for="(option, index) in getCurrentQuestion.options" 
@@ -15,14 +15,19 @@
           getCurrentQuestion.selected != null && index != getCurrentQuestion.selected ? 'disabled' : ''
         }`">
         <input 
-        type="radio" 
-        :name="getCurrentQuestion.question" 
-        :value="index" v-model="getCurrentQuestion.selected" 
-        :disabled="Boolean(getCurrentQuestion.selected)" 
-        :change="setAnswer">
+          type="radio" 
+          :name="getCurrentQuestion.question" 
+          :value="index" v-model="getCurrentQuestion.selected" 
+          :disabled="Boolean(getCurrentQuestion.selected)" 
+          :change="setAnswer">
         <span>{{ option }}</span>
       </label>
     </div>
+    <button 
+      @click="nextQuestion"
+      :disabled="!getCurrentQuestion.selected">
+      {{ getCurrentQuestion.index == (vueQuestions.length - 1) ? 'Finish' : (getCurrentQuestion.selected == null ? 'Select an option' : 'Next Question')}}
+    </button>
   </div>
  
 </template>
@@ -48,6 +53,7 @@ const finalScore =  score.value/numberOfQuestions.value*100
 
 const getCurrentQuestion = computed(() => {
   let question = vueQuestions[currentQuestion.value]
+  question.index = currentQuestion.value
   return question
 })
 
@@ -69,5 +75,25 @@ const setAnswer = (e: Event) => {
 </script>
 
 <style>
+.question {
+  margin-top: 20px;
+  color: rgb(173, 170, 170);
+  font-weight: 700;
+}
+.options {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+.correct {
+  background: rgb(26, 138, 63);
+}
+
+.wrong {
+  background: red;
+}
 
 </style>

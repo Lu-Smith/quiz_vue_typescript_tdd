@@ -3,6 +3,7 @@ declare const VueQuestions: {
     answer: number;
     options: string[];
     selected: null | number;
+    index?: number;
 }[];
 
 export default VueQuestions;
