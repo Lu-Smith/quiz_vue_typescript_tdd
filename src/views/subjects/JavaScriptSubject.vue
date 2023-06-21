@@ -1,13 +1,22 @@
 <template>
-  <h2>JavaScript</h2>
+  <h2>{{ selectedSubject }}</h2>
+  <MainQuiz :selectedSubject="selectedSubject" :questionsArray="questionsArray"/>
 </template>
 
-<script>
+<script lang="ts">
+import javaScriptQuestions from '../../assets/javaScriptQuestions.js'
+import { ref } from 'vue'
+import MainQuiz from '../../components/MainQuiz.vue'
+
 export default {
-
-}
+  components: {
+    MainQuiz
+  },
+  data() {
+    return {
+      selectedSubject: ref('javaScript'),
+      questionsArray: javaScriptQuestions
+    }
+  }
+  }
 </script>
-
-<style>
-
-</style>
