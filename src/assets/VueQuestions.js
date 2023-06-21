@@ -55,13 +55,13 @@ const vueQuestions = [
         "selected": null
     },
     {
-        "question": "Features of Vue.js are?",
+        "question": "What is a primitive type?",
         "answer": 3,
         "options": [
-            "Promises, Observables, Generators, Async/await",
-            "Inheritance, Polymorphism, Encapsulation, Abstraction",
-            "Dependency Injection, Inversion of Control, Aspect-Oriented Programming",
-            "Templates, Reactivity, Components, Transitions, Routing "
+            "div, p, stong, small",
+            "graphs, tables",
+            "array, objects, object[]",
+            "string, number, boolean "
         ],
         "selected": null
     },
@@ -84,6 +84,39 @@ const vueQuestions = [
             "2014",
             "1994",
             "2020"
+        ],
+        "selected": null
+    },
+    {
+        "question": "Where primitive types can be used?",
+        "answer": 1,
+        "options": [
+            "Reactive()",
+            "Ref()",
+            "Reagenartive()",
+            "Refreshing()",
+        ],
+        "selected": null
+    },
+    {
+        "question": "Can Reactive() and Ref() can be reassigned?",
+        "answer": 0,
+        "options": [
+            "Reactive() can not be reasigned, but Ref() can",
+            "Reactive() can be reasigned, but Ref() can not",
+            "Reactive() and Ref() can not be reasigned",
+            "Reactive() and Ref() can be reasigned",
+        ],
+        "selected": null
+    },
+    {
+        "question": "Which one should be used in Composable Function?",
+        "answer": 2,
+        "options": [
+            "Reactive()",
+            "Reactive() and Ref()",
+            "Ref()",
+            "Loop()",
         ],
         "selected": null
     }
