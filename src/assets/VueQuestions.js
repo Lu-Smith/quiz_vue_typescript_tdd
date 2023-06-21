@@ -47,7 +47,7 @@ const vueQuestions = [
         "question": "What are computed properties in Vue.js?",
         "answer": 0,
         "options": [
-            "Properties that are calculated based on other properties in the component.",
+            "Properties calculated based on other properties in the component.",
             "Properties defined in data objects.",
             "Properties used for event handling.",
             "Properties used for styling."
