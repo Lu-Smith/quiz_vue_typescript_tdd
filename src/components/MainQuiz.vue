@@ -33,10 +33,19 @@
 
 <script lang="ts">
 import { ref, computed } from 'vue'
+import VueQuestions from '@/assets/vueQuestions'
 
 export default {
   props: ['questionArray', 'selectedSubject'],
-  setup(props) {
+  setup(props: { 
+    questionArray: {
+        question: string;
+        answer: number;
+        options: string[];
+        selected: number | null;
+        index?: number | undefined;
+    }[], 
+    selectedSubject: string}) {
 
 const quizCompleted = ref(false)
 const correctAnswer = ref(false)
