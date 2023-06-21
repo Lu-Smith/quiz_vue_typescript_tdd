@@ -1,13 +1,22 @@
 <template>
-  <h2>Angular</h2>
+  <h2>{{ selectedSubject }}</h2>
+  <MainQuiz :selectedSubject="selectedSubject" :questionsArray="questionsArray"/>
 </template>
 
-<script>
+<script lang="ts">
+import angularQuestions from '../../assets/angularQuestions.js'
+import { ref } from 'vue'
+import MainQuiz from '../../components/MainQuiz.vue'
+
 export default {
-
-}
+  components: {
+    MainQuiz
+  },
+  data() {
+    return {
+      selectedSubject: ref('Angular'),
+      questionsArray: angularQuestions
+    }
+  }
+  }
 </script>
-
-<style>
-
-</style>
