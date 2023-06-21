@@ -73,7 +73,7 @@ const setAnswer = () => {
   if (getCurrentQuestion.value.selected === getCurrentQuestion.value.answer) {
     score.value++
     correctAnswer.value = true
-    finalScore.value = ( score.value / numberOfQuestions.value)*100
+    finalScore.value = Number((( score.value / numberOfQuestions.value)*100).toFixed(1))
   } 
   answeredQuestion.value = !answeredQuestion.value
 }
