@@ -1,17 +1,23 @@
 <template>
+  <h2>{{ selectedSubject }}</h2>
   <MainQuiz :selectedSubject="selectedSubject" :questionsArray="questionsArray"/>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts">
 import vueQuestions from '../../assets/vueQuestions.js'
 import { ref } from 'vue'
 import MainQuiz from '../../components/MainQuiz.vue'
 
-const selectedSubject = ref('Vue')
-const questionsArray = vueQuestions
-
-const components= {
+export default {
+  components: {
     MainQuiz
+  },
+  data() {
+    return {
+      selectedSubject: ref('Vue'),
+      questionsArray: vueQuestions
+    }
+  }
   }
 </script>
 

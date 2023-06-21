@@ -1,5 +1,4 @@
 <template>
-    <h2>{{ selectedSubject }}</h2>
     <p v-if="!quizCompleted">{{ selectedSubject }} quiz</p>
     <div v-else>
       <p>Your score: <strong>{{ finalScore }}%</strong></p>
@@ -33,12 +32,11 @@
 
 <script lang="ts">
 import { ref, computed } from 'vue'
-import VueQuestions from '@/assets/vueQuestions'
 
 export default {
-  props: ['questionArray', 'selectedSubject'],
+  props: ['questionsArray', 'selectedSubject'],
   setup(props: { 
-    questionArray: {
+    questionsArray: {
         question: string;
         answer: number;
         options: string[];
@@ -50,20 +48,20 @@ export default {
 const quizCompleted = ref(false)
 const correctAnswer = ref(false)
 const answeredQuestion = ref(false)
-const numberOfQuestions = ref(props.questionArray.length)
+const numberOfQuestions = ref(props.questionsArray.length)
 const currentQuestion = ref(0)
 const score = ref(0)
 const finalScore = ref(0)
 
 
 const getCurrentQuestion = computed(() => {
-  let question = props.questionArray[currentQuestion.value]
+  let question = props.questionsArray[currentQuestion.value]
   question.index = currentQuestion.value
   return question
 })
 
 const nextQuestion = () => {
-  if(currentQuestion.value < props.questionArray.length -1) {
+  if(currentQuestion.value < props.questionsArray.length -1) {
     currentQuestion.value++
     correctAnswer.value = false
   } else {
@@ -81,7 +79,7 @@ const setAnswer = () => {
 }
 
 const playAgain = () => {
-  props.questionArray.forEach((q) => {
+  props.questionsArray.forEach((q) => {
     q.selected = null;
   });
   quizCompleted.value = false
