@@ -14,7 +14,7 @@ export default {
   },
   data() {
     return {
-      selectedSubject: ref('javaScript'),
+      selectedSubject: ref('JavaScript'),
       questionsArray: javaScriptQuestions
     }
   }
