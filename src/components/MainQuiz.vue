@@ -3,7 +3,7 @@
     <div v-else>
       <p>Your score: <strong>{{ finalScore }}%</strong></p>
       <button v-if="finalScore !== 100" class="playAgain" @click="playAgain">Try again</button>
-      <h3 v-else >Congrats, You are think like a pro!</h3>
+      <h3 v-else >Impressive! Your thinking reflects the mindset of a seasoned pro.</h3>
     </div>
     <div>{{ score }}/{{ numberOfQuestions }}</div>
     <div v-if="!quizCompleted" class="quiz"> 
