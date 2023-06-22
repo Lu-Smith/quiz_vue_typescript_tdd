@@ -174,6 +174,72 @@ const javaScriptQuestions = [
           "Angular"
         ],
         "selected": null
+      },
+      {
+        "question": "What is the difference between 'undefined' and 'null' in JavaScript?",
+        "answer": 0,
+        "options": [
+          "'undefined' represents a variable that has been declared but has not been assigned a value, while 'null' represents the intentional absence of any object value.",
+          "'null' represents a variable that has been declared but has not been assigned a value, while 'undefined' represents the intentional absence of any object value.",
+          "'undefined' and 'null' are interchangeable and can be used to represent the same concept.",
+          "'undefined' and 'null' both represent errors and should be avoided in JavaScript."
+        ],
+        "selected": null
+      },
+      {
+        "question": "Explain the concept of hoisting in JavaScript.",
+        "answer": 2,
+        "options": [
+          "Hoisting refers to the process of moving a variable declaration to the top of its scope.",
+          "Hoisting refers to the process of automatically converting data types in JavaScript.",
+          "Hoisting refers to the behavior of JavaScript where variable and function declarations are moved to the top of their containing scope during the compilation phase.",
+          "Hoisting refers to the process of adding event listeners to HTML elements in JavaScript."
+        ],
+        "selected": null
+      },
+      {
+        "question": "What are closures in JavaScript and how are they used?",
+        "answer": 1,
+        "options": [
+          "Closures are a way to style HTML elements in JavaScript.",
+          "Closures are functions that have access to variables from their outer (enclosing) function scope, even after the outer function has returned.",
+          "Closures are a way to store multiple values in a single variable.",
+          "Closures are a type of JavaScript data structure used for efficient data retrieval."
+        ],
+        "selected": null
+      },
+      {
+        "question": "What is event delegation in JavaScript and why is it useful?",
+        "answer": 0,
+        "options": [
+          "Event delegation is a technique where you attach a single event listener to a parent element instead of attaching multiple event listeners to individual child elements. It is useful for improving performance and handling dynamic content.",
+          "Event delegation is a way to create custom events in JavaScript.",
+          "Event delegation is a technique for validating user input in forms.",
+          "Event delegation is a way to manipulate the styling of HTML elements using JavaScript."
+        ],
+        "selected": null
+      },
+      {
+        "question": "Explain the concept of prototypal inheritance in JavaScript.",
+        "answer": 2,
+        "options": [
+          "Prototypal inheritance is a way to create objects directly from classes in JavaScript.",
+          "Prototypal inheritance is a technique for encapsulating related data and functions into a single object.",
+          "Prototypal inheritance is the mechanism by which objects in JavaScript can inherit properties and methods from other objects.",
+          "Prototypal inheritance is a concept related to variable scoping in JavaScript."
+        ],
+        "selected": null
+      },
+      {
+        "question": "What is the purpose of the 'async/await' syntax in JavaScript?",
+        "answer": 1,
+        "options": [
+          "'async/await' is used to define asynchronous functions in JavaScript.",
+          "'async/await' is used to handle errors and exceptions in JavaScript.",
+          "'async/await' is used to transform data in JavaScript.",
+          "'async/await' is used to loop over elements in an array in JavaScript."
+        ],
+        "selected": null
       }
 ]
 
