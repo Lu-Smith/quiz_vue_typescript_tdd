@@ -4,7 +4,7 @@
 </template>
 
 <script lang="ts">
-import vueQuestions from '../../assets/vueQuestions'
+import vueQuestions from '../../assets/vueQuestions.js'
 import { ref } from 'vue'
 import MainQuiz from '../../components/MainQuiz.vue'
 
