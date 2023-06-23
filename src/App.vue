@@ -1,7 +1,6 @@
 <template>
     <HelloWorld msg = "Welcome to Your Ultimate Training"/>
     <MainFooter />
-
 </template>
 
 <script lang="ts">

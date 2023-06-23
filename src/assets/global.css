@@ -55,6 +55,10 @@ a:hover {
     text-decoration: none;
 }
 
+a.router-link-active{
+  border-bottom: 2px solid #ff5722; 
+}
+
 button {
     padding: 10px 15px;
     border-radius: 20px;

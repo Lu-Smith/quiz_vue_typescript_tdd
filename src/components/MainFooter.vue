@@ -13,6 +13,7 @@
     padding: 20px;
     color: #eeeeee; 
     background: #2d4059; 
+    font-size: 13px;
   }
   
   footer a {
@@ -57,14 +58,14 @@
 
   @media screen and (max-width: 900px) {
     footer {
-      font-size: 14px;
+      font-size: 12px;
     }
   }
 
   @media screen and (max-width: 480px) {
     footer {
       padding: 10px;
-      font-size: 12px;
+      font-size: 11px;
     }
   }
 </style>
