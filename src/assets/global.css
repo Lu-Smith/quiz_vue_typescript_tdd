@@ -24,11 +24,13 @@ h1 {
 
 h2 {
     position: fixed;
-    top: 20px;
+    top: 0;
+    padding: 20px 0 10px 0;
     left: 0;
     right: 0;
     font-family: 'El Messiri', sans-serif;
     color: #ff5722;
+    background-color: rgba(34, 40, 49, 0.5);
 }
 
 h3 {
