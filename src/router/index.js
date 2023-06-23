@@ -7,79 +7,53 @@ import TDD from '../views/subjects/TDDSubject.vue'
 import CPlusPlus from '../views/subjects/CPlusPlusSubject.vue'
 import React from '../views/subjects/ReactSubject.vue'
 import TypeScript from '../views/subjects/TypeScriptSubject.vue'
+import RandomQuestions from '../views/subjects/RandomQuestions.vue'
 
 const routes = [
   {
     path: '/',
     name: 'HomePage',
     component: HomePage,
-    meta: {
-      enterClass: "animate_animated animate_fadeInLeft",
-      leaveClass: "animate_animated animate_fadeOutRight"
-    }
   },
   {
     path: '/Vue',
     name: 'Vue',
     component: Vue,
-    meta: {
-      enterClass: "animate_animated animate_fadeInRight",
-      leaveClass: "animate_animated animate_fadeOutLeft"
-    }
   },
   {
     path: '/Angular',
     name: 'Angular',
     component: Angular,
-    meta: {
-      enterClass: "animate_animated animate_fadeInLeft",
-      leaveClass: "animate_animated animate_fadeOutRight"
-    }
   },
   {
     path: '/Typescript',
     name: 'TypeScript',
     component: TypeScript,
-    meta: {
-      enterClass: "animate_animated animate_fadeInRight",
-      leaveClass: "animate_animated animate_fadeOutLeft"
-    }
   },
   {
     path: '/TDD',
     name: 'TDD',
     component: TDD,
-    meta: {
-      enterClass: "animate_animated animate_fadeInLeft",
-      leaveClass: "animate_animated animate_fadeOutRight"
-    }
   },
   {
     path: '/C++',
     name: 'CPlusPlus',
     component: CPlusPlus,
-    meta: {
-      enterClass: "animate_animated animate_fadeInRight",
-      leaveClass: "animate_animated animate_fadeOutLeft"
-    }
   },
   {
     path: '/React',
     name: 'React',
     component: React,
-    meta: {
-      enterClass: "animate_animated animate_fadeInLeft",
-      leaveClass: "animate_animated animate_fadeOutRight"
-    }
   },
   {
     path: '/Javascript',
     name: 'JavaScript',
     component: JavaScript,
-    meta: {
-      enterClass: "animate_animated animate_fadeInRight",
-      leaveClass: "animate_animated animate_fadeOutLeft"
-    }
+  },
+  {
+    path: '/RandomQuestions',
+    name: 'RandomQuestions',
+    component: RandomQuestions,
   },
  
  
