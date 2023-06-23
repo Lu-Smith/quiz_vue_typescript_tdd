@@ -7,7 +7,7 @@ import TDD from '../views/subjects/TDDSubject.vue'
 import CPlusPlus from '../views/subjects/CPlusPlusSubject.vue'
 import React from '../views/subjects/ReactSubject.vue'
 import TypeScript from '../views/subjects/TypeScriptSubject.vue'
-import RandomQuestions from '../views/subjects/RandomQuestions.vue'
+import Random_Questions from '../views/subjects/RandomQuestions.vue'
 
 const routes = [
   {
@@ -51,9 +51,9 @@ const routes = [
     component: JavaScript,
   },
   {
-    path: '/RandomQuestions',
-    name: 'RandomQuestions',
-    component: RandomQuestions,
+    path: '/Random_Questions',
+    name: 'Random_Questions',
+    component: Random_Questions,
   },
  
  

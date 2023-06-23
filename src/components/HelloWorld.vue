@@ -23,7 +23,7 @@ export default {
   props: ['msg'],
   setup() {
     const selectedSubject = ref('');
-    const subjects = ref(['Vue', 'Angular', 'TypeScript', 'React', 'JavaScript', 'C++', 'TDD', 'Random Questions'])
+    const subjects = ref(['Vue', 'Angular', 'TypeScript', 'React', 'JavaScript', 'C++', 'TDD', 'Random_Questions'])
     const router = inject('router') as Router;
     const navigateToSubject = () => {
       if (selectedSubject.value) {
