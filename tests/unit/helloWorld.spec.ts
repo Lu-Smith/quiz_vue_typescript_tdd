@@ -3,7 +3,11 @@ import HelloWorldVue from "@/components/HelloWorld.vue";
 
 describe('HelloWorld', () => {
     it('renders the component with correct content and functionality', () => {
+        const msg = 'Welcome to Your Ultimate Training';
         const wrapper = shallowMount(HelloWorldVue, {
+            props: {
+                msg: msg // Pass the prop value
+              },
             global: {
                 provide: {
                     router: {
@@ -28,5 +32,12 @@ describe('HelloWorld', () => {
         const routerLinkElement = wrapper.findComponent(RouterLinkStub);
         expect(routerLinkElement.exists()).toBe(true);
         expect(routerLinkElement.props().to).toBe('/');
+
+        const titleContainer = wrapper.find('div');
+        expect(titleContainer.exists()).toBe(true);
+
+        const titleElement = titleContainer.find('h1');
+        expect(titleElement.exists()).toBe(true);
+        expect(titleElement.text()).toBe(msg);
     })
 })
