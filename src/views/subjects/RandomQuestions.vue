@@ -10,7 +10,6 @@
 
 <script lang="ts" setup>
 import randomQuestions from '../../assets/randomQuestions.js'
-import { ref } from 'vue';
 
 const questionsArray = randomQuestions
 </script>
