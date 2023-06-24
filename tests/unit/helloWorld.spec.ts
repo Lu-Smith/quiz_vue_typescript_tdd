@@ -18,5 +18,11 @@ describe('HelloWorld', () => {
 
         const navElement = wrapper.find('nav');
         expect(navElement.exists()).toBe(true);
+
+        const selectElement = navElement.find('select');
+        expect(selectElement.exists()).toBe(true);
+
+        const optionElement = selectElement.find('option');
+        expect(optionElement.exists()).toBe(true);
     })
 })
