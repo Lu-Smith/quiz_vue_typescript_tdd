@@ -24,5 +24,9 @@ describe('HelloWorld', () => {
 
         const optionElement = selectElement.find('option');
         expect(optionElement.exists()).toBe(true);
+
+        const routerLinkElement = wrapper.findComponent(RouterLinkStub);
+        expect(routerLinkElement.exists()).toBe(true);
+        expect(routerLinkElement.props().to).toBe('/');
     })
 })
