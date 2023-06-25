@@ -13,6 +13,11 @@ describe('MainQuiz', () => {
         });
 
         expect(wrapper.find('p').exists()).toBe(true);
+        const quizElement = wrapper.find('div.quiz');
+        expect(quizElement.exists()).toBe(true);
+        const optionsElement = quizElement.find('div.options');
+        expect(optionsElement.exists()).toBe(true);
+        expect(wrapper.find('button').exists()).toBe(true);
 
     })
 
