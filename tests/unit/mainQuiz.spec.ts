@@ -15,9 +15,18 @@ describe('MainQuiz', () => {
         expect(wrapper.find('p').exists()).toBe(true);
         const quizElement = wrapper.find('div.quiz');
         expect(quizElement.exists()).toBe(true);
-        const optionsElement = quizElement.find('div.options');
-        expect(optionsElement.exists()).toBe(true);
-        expect(wrapper.find('button').exists()).toBe(true);
+
+            const optionsElement = quizElement.find('div.options');
+            expect(optionsElement.exists()).toBe(true);
+            const labelElement = optionsElement.find('label');
+            expect(labelElement.exists()).toBe(true)
+                const inputElement = labelElement.find('input');
+                expect(inputElement.exists()).toBe(true)
+                const spanElement = labelElement.find('span');
+                expect(spanElement.exists()).toBe(true);
+            const buttonElement = quizElement.find('button');
+            expect(buttonElement.exists()).toBe(true);
+
 
     })
 

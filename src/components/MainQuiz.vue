@@ -8,26 +8,26 @@
     <div>{{ score }}/{{ numberOfQuestions }}</div>
     <div v-if="!quizCompleted" class="quiz"> 
       <div class="question"> {{ getCurrentQuestion.question }}</div>
-      <div class="options">
-        <label 
-          v-for="(option, index) in getCurrentQuestion.options" 
-          :key="index" 
-          :class="`options, ${getCurrentQuestion.selected === index && correctAnswer ? 'correct' : ''}  ${getCurrentQuestion.selected === index && !correctAnswer ? 'wrong' : ''}
-          ${answeredQuestion ? 'disabled' : ''}`">
+        <div class="options">
+          <label 
+            v-for="(option, index) in getCurrentQuestion.options" 
+            :key="index" 
+            :class="`options, ${getCurrentQuestion.selected === index && correctAnswer ? 'correct' : ''}  ${getCurrentQuestion.selected === index && !correctAnswer ? 'wrong' : ''}
+            ${answeredQuestion ? 'disabled' : ''}`">
           <input 
-            type="radio" 
-            :name="getCurrentQuestion.options[index]" 
-            :value="index" 
-            v-model="getCurrentQuestion.selected" 
-            @change="setAnswer">
-          <span>{{ option }}</span>
-        </label>
-      </div>
-      <button 
-        @click="nextQuestion"
-        :class="!answeredQuestion ? 'disabled' : ''">
-        {{ getCurrentQuestion.index === (numberOfQuestions - 1) ? 'Finish' : (getCurrentQuestion.selected == null ? 'Select Option' : 'Next Question')}}
-      </button>
+              type="radio" 
+              :name="getCurrentQuestion.options[index]" 
+              :value="index" 
+              v-model="getCurrentQuestion.selected" 
+              @change="setAnswer">
+            <span>{{ option }}</span>
+          </label>
+        </div>
+        <button 
+          @click="nextQuestion"
+          :class="!answeredQuestion ? 'disabled' : ''">
+          {{ getCurrentQuestion.index === (numberOfQuestions - 1) ? 'Finish' : (getCurrentQuestion.selected == null ? 'Select Option' : 'Next Question')}}
+        </button>
     </div>
   </template>
 
