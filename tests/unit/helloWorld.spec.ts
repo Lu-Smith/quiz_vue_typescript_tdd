@@ -2,16 +2,17 @@ import { RouterLinkStub, shallowMount } from "@vue/test-utils";
 import HelloWorldVue from "@/components/HelloWorld.vue";
 
 describe('HelloWorld', () => {
-    it('renders the component with correct content and functionality', () => {
+    it('renders the component with correct content and functionality', async () => {
         const msg = 'Welcome to Your Ultimate Training';
+        const routerPushMock = jest.fn();
         const wrapper = shallowMount(HelloWorldVue, {
             props: {
-                msg: msg // Pass the prop value
+                msg: msg 
               },
             global: {
                 provide: {
                     router: {
-                        push: jest.fn()
+                        push: routerPushMock
                     }
                 },
                 stubs: {
