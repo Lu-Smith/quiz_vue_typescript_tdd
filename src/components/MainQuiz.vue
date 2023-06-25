@@ -1,6 +1,6 @@
 <template>
-    <p v-if="!quizCompleted">{{ selectedSubject }} quiz</p>
-    <div v-else>
+    <p v-if="!quizCompleted" data-test="quiz-title">{{ selectedSubject }} quiz</p>
+    <div v-else data-test="score-container">
       <p>Your score: <strong>{{ finalScore }}%</strong></p>
       <button v-if="finalScore !== 100" class="playAgain" @click="playAgain">Try again</button>
       <h3 v-else >Impressive! Your thinking reflects the mindset of a seasoned pro.</h3>
@@ -14,20 +14,20 @@
             :key="index" 
             :class="`options, ${getCurrentQuestion.selected === index && correctAnswer ? 'correct' : ''}  ${getCurrentQuestion.selected === index && !correctAnswer ? 'wrong' : ''}
             ${answeredQuestion ? 'disabled' : ''}`">
-          <input 
-              type="radio" 
-              :name="getCurrentQuestion.options[index]" 
-              :value="index" 
-              v-model="getCurrentQuestion.selected" 
-              @change="setAnswer">
+            <input 
+                type="radio" 
+                :name="getCurrentQuestion.options[index]" 
+                :value="index" 
+                v-model="getCurrentQuestion.selected" 
+                @change="setAnswer">
             <span>{{ option }}</span>
           </label>
         </div>
-        <button 
+      <button 
           @click="nextQuestion"
           :class="!answeredQuestion ? 'disabled' : ''">
           {{ getCurrentQuestion.index === (numberOfQuestions - 1) ? 'Finish' : (getCurrentQuestion.selected == null ? 'Select Option' : 'Next Question')}}
-        </button>
+      </button>
     </div>
   </template>
 
