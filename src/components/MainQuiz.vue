@@ -102,7 +102,7 @@ return {
       playAgain,
       setAnswer,
       nextQuestion,
-      getCurrentQuestion
+      getCurrentQuestion, 
     }
 }
 }

@@ -55,7 +55,8 @@ describe('MainQuiz', () => {
         for (let i = 0; i < questionsArray.length; i++) {
             const question = questionsArray[i];
             question.selected = question.answer;
-            await wrapper.vm.nextQuestion();
+            const buttonElement = wrapper.find('button');
+            await buttonElement.trigger('click');
           }
         
         expect(wrapper.find('[data-test="quiz-title"]').exists()).toBe(false)
