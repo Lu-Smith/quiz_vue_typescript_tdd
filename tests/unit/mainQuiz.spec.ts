@@ -1,6 +1,5 @@
 import { shallowMount, VueWrapper } from '@vue/test-utils';
-import { defineComponent, ref, computed, Ref, ComputedRef } from 'vue';
-import MainQuiz from '@/components/MainQuiz.vue';
+import { defineComponent, ref, computed } from 'vue';
 
 interface Question {
   question: string;
@@ -182,4 +181,10 @@ describe('MainQuiz', () => {
         const quizElement = wrapper.find('div.quiz');
         expect(quizElement.exists()).toBe(false);
       })
-    })
+
+});
+
+
+
+
+  
