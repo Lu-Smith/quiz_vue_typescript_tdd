@@ -219,6 +219,171 @@ const vueQuestions = [
         ],
         "selected": null
       },
+      {
+        "question": "In Vue 3, which lifecycle hook is used when a component is mounted to the DOM?",
+        "answer": 2,
+        "options": [
+          "beforeCreate()",
+          "created()",
+          "mounted()",
+          "destroyed()"
+        ],
+        "selected": null
+      },
+      {
+        "question": "In Vue 3, what is the purpose of the nextTick function?",
+        "answer": 3,
+        "options": [
+          "Delaying the execution of a function until the next event loop cycle",
+          "Handling keyboard events",
+          "Updating the DOM immediately after a data change",
+          "Executing a callback function after the DOM has been updated"
+        ],
+        "selected": null
+      },
+      {
+        "question": "What is the purpose of the provide and inject functions in Vue 3?",
+        "answer": 1,
+        "options": [
+          "Managing component state",
+          "Providing and injecting dependencies between ancestor and descendant components",
+          "Defining component props",
+          "Handling routing in a Vue application"
+        ],
+        "selected": null
+      },
+      {
+        "question": "How can you emit a custom event from a child component to its parent in Vue 3?",
+        "answer": 2,
+        "options": [
+          "Using the $emit method",
+          "Defining a custom event in the template",
+          "Using the emit function in the setup() method",
+          "Creating a global event bus"
+        ],
+        "selected": null
+      },
+      {
+        "question": "What is the purpose of the watchEffect function in Vue 3's Composition API?",
+        "answer": 0,
+        "options": [
+          "Performing side effects in response to reactive dependencies",
+          "Handling user input in forms",
+          "Defining computed properties",
+          "Managing global state in a Vuex store"
+        ],
+        "selected": null
+      },
+      {
+        "question": "In Vue 3, how can you provide default values for props in a component?",
+        "answer": 1,
+        "options": [
+          "Using the v-bind directive",
+          "Defining default property values in the props option",
+          "Creating a data property for each prop",
+          "Using the computed option for props"
+        ],
+        "selected": null
+      },
+      {
+        "question": "What is the purpose of the v-if and v-else directives in Vue 3?",
+        "answer": 0,
+        "options": [
+          "Conditional rendering of elements",
+          "Styling elements based on conditions",
+          "Creating event listeners",
+          "Handling form submissions"
+        ],
+        "selected": null
+      },
+      {
+        "question": "Which function is used to create a reactive ref in the Composition API of Vue 3?",
+        "answer": 2,
+        "options": [
+          "reactive()",
+          "computed()",
+          "ref()",
+          "watch()"
+        ],
+        "selected": null
+      },
+      {
+        "question": "In Vue 3, what is the purpose of the Teleport component?",
+        "answer": 3,
+        "options": [
+          "Managing state in Vuex",
+          "Handling HTTP requests",
+          "Creating global components",
+          "Moving a component's children to a different DOM location"
+        ],
+        "selected": null
+      },
+      {
+        "question": "Which of the following is a new feature in Vue 3 for efficient template rendering?",
+        "answer": 1,
+        "options": [
+          "v-model directive",
+          "Teleport",
+          "v-for directive",
+          "v-bind directive"
+        ],
+        "selected": null
+      },
+      {
+        "question": "What is the Composition API introduced in Vue 3 used for?",
+        "answer": 0,
+        "options": [
+          "Organizing component logic with functions",
+          "Styling components with CSS",
+          "Defining component templates",
+          "Handling component events"
+        ],
+        "selected": null
+      },
+      {
+        "question": "What is the purpose of the v-show directive in Vue.js?",
+        "answer": 0,
+        "options": [
+          "Toggling the visibility of an element based on a condition",
+          "Handling form submissions",
+          "Creating a computed property",
+          "Defining custom events"
+        ],
+        "selected": null
+      },
+      {
+        "question": "Which Vue.js directive is used for binding an attribute to an expression?",
+        "answer": 3,
+        "options": [
+          "v-if",
+          "v-model",
+          "v-on",
+          "v-bind"
+        ],
+        "selected": null
+      },
+      {
+        "question": "What does the v-for directive in Vue.js primarily facilitate?",
+        "answer": 2,
+        "options": [
+          "Conditional rendering",
+          "Event handling",
+          "Iteration over a list",
+          "Two-way data binding"
+        ],
+        "selected": null
+      },
+      {
+        "question": "What major improvement in Vue 3 provides a more flexible and scalable way to organize component logic?",
+        "answer": 2,
+        "options": [
+          "Introduction of Teleport component",
+          "Enhanced support for TypeScript",
+          "The Composition API",
+          "Improved reactivity system"
+        ],
+        "selected": null
+      }
 ]
 
 export default vueQuestions;
