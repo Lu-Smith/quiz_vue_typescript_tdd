@@ -8,6 +8,5 @@ describe('App', () => {
         const wrapper = shallowMount(App);
         expect(wrapper.findComponent(HelloWorld).exists()).toBe(true);
         expect(wrapper.findComponent(MainFooter).exists()).toBe(true);
-
     })
 })
