@@ -11,6 +11,17 @@ const javaScriptQuestions = [
         "selected": null
       },
       {
+        "question": "What indexOf() doesn't returns?",
+        "answer": 0,
+        "options": [
+          "returns a string",
+          "returns the first index at which given elemnt can be found in the array.",
+          "returns -1 if the element is not present.",
+          "returns a number."
+        ],
+        "selected": null
+      },
+      {
         "question": "Who created JavaScript?",
         "answer": 0,
         "options": [
@@ -18,6 +29,17 @@ const javaScriptQuestions = [
           "Mark Zuckerberg",
           "Tim Berners-Lee",
           "Douglas Crockford"
+        ],
+        "selected": null
+      },
+      {
+        "question": "What the method splice() do?",
+        "answer": 0,
+        "options": [
+          "it replace or remove existing elements from an array",
+          "It adds new elements to an array without removing any existing elements",
+          "It sorts the elements of an array alphabetically",
+          "It reverses the order of elements in an array"
         ],
         "selected": null
       },
@@ -77,6 +99,17 @@ const javaScriptQuestions = [
         "selected": null
       },
       {
+        "question": "What does the method 'push()' do?",
+        "answer": 0,
+        "options": [
+          "It adds new elements to an array without removing any existing elements",
+          "It removes elements from the end of an array",
+          "It removes elements from the beginning of an array",
+          "It removes specific elements from an array"
+        ],
+        "selected": null
+      },
+      {
         "question": "What does the 'typeof' operator in JavaScript do?",
         "answer": 0,
         "options": [
@@ -95,6 +128,17 @@ const javaScriptQuestions = [
           "To handle asynchronous operations or events.",
           "To create reusable code snippets.",
           "To style elements on a web page."
+        ],
+        "selected": null
+      },
+      {
+        "question": "What does the method 'sort()' do?",
+        "answer": 3,
+        "options": [
+          "It adds new elements to an array without removing any existing elements",
+          "It removes elements from the end of an array",
+          "It sorts the elements of an array alphabetically",
+          "It reverses the order of elements in an array"
         ],
         "selected": null
       },
