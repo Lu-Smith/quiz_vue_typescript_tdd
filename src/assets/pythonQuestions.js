@@ -295,6 +295,17 @@ const pythonQuestions = [
             "for"
         ],
         "selected": null
+    },
+    {
+        "question": "What is a difference between / and // in Python?",
+        "answer": 1,
+        "options": [
+            "/ is used for division and also returns an integer.",
+            "/ division (returns floats) and // integer division (returns an integer).",
+            "// is used for dividing lists, while / is used for numbers.",
+            "/ returns the remainder of a division, while // performs full division."
+        ],
+        "selected": null
     }
 ]
 
