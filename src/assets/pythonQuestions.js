@@ -273,6 +273,17 @@ const pythonQuestions = [
             "To define class methods."
         ],
         "selected": null
+    },
+    {
+        "question": "What is a variable?",
+        "answer": 2,
+        "options": [
+            "A type of data structure used to store multiple values.",
+            "A function that can be reused multiple times.",
+            "A reusable container for a value (string, integer, float, boolean) and it behaves as if it was the value that it contains.",
+            "An operator used to perform arithmetic operations."
+        ],
+        "selected": null
     }
 ]
 
