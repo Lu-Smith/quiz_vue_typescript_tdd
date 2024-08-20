@@ -8,7 +8,7 @@ import CPlusPlus from '../views/subjects/CPlusPlusSubject.vue'
 import React from '../views/subjects/ReactSubject.vue'
 import TypeScript from '../views/subjects/TypeScriptSubject.vue'
 import Random_Questions from '../views/subjects/RandomQuestions.vue'
-import PythonQuestions from '../views/subjects/PythonSubject.vue'
+import Python from '../views/subjects/PythonSubject.vue'
 
 const routes = [
   {
@@ -57,9 +57,9 @@ const routes = [
     component: Random_Questions,
   },
   {
-    path: '/PythonQuestions',
-    name: 'PythonQuestions',
-    component: PythonQuestions,
+    path: '/Python',
+    name: 'Python',
+    component: Python,
   },
  
  
