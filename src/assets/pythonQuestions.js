@@ -284,6 +284,17 @@ const pythonQuestions = [
             "An operator used to perform arithmetic operations."
         ],
         "selected": null
+    },
+    {
+        "question": "What f in print(f'Hello {full_name}') stands for?",
+        "answer": 1,
+        "options": [
+            "frame",
+            "format",
+            "framework",
+            "for"
+        ],
+        "selected": null
     }
 ]
 
