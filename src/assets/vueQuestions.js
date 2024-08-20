@@ -110,17 +110,6 @@ const vueQuestions = [
         "selected": null
     },
     {
-        "question": "Which one should be used in Composable Function?",
-        "answer": 2,
-        "options": [
-            "Reactive()",
-            "Reactive() and Ref()",
-            "Ref()",
-            "Loop()",
-        ],
-        "selected": null
-    },
-    {
         "question": "What is the virtual DOM in Vue.js?",
         "answer": 0,
         "options": [
