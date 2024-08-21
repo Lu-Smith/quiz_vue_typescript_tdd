@@ -306,6 +306,28 @@ const pythonQuestions = [
             "/ returns the remainder of a division, while // performs full division."
         ],
         "selected": null
+    },
+    {
+        "question": "What is typecasting?",
+        "answer": 0,
+        "options": [
+            "The process of converting a variable from one data type to another",
+            "A method to define the data type of a function.",
+            "The process of iterating over a collection of objects.",
+            "The method to determine the type of a variable."
+        ],
+        "selected": null
+    },
+    {
+        "question": "What is a tuple?",
+        "answer": 3,
+        "options": [
+            "A mutable collection of objects.",
+            "A specific type of function in Python.",
+            "A collection that only holds unique values.",
+            "a collection of objects separated by commas"
+        ],
+        "selected": null
     }
 ]
 
