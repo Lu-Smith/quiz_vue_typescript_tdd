@@ -328,6 +328,28 @@ const pythonQuestions = [
             "a collection of objects separated by commas"
         ],
         "selected": null
+    },
+    {
+        "question": "You can add/remove/clear ?",
+        "answer": 3,
+        "options": [
+            "list",
+            "tuple",
+            "variable",
+            "set"
+        ],
+        "selected": null
+    },
+    {
+        "question": "You can pop/append/clear/remove ?",
+        "answer": 0,
+        "options": [
+            "list",
+            "tuple",
+            "variable",
+            "set"
+        ],
+        "selected": null
     }
 ]
 
