@@ -284,6 +284,17 @@ const javaScriptQuestions = [
           "'async/await' is used to loop over elements in an array in JavaScript."
         ],
         "selected": null
+      },
+      {
+        "question": "What is ternary operator?",
+        "answer": 0,
+        "options": [
+          "a shortcut to if{} and else{} statements",
+          "an operator used to define variables",
+          "a loop structure",
+          "a method for comparing two values",
+        ],
+        "selected": null
       }
 ]
 
