@@ -18,5 +18,5 @@ export default {
       questionsArray: javaScriptQuestions
     }
   }
-  }
+}
 </script>
