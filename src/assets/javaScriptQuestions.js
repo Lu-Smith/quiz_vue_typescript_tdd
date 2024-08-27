@@ -295,6 +295,17 @@ const javaScriptQuestions = [
         "a method for comparing two values",
       ],
       "selected": null
+    },
+    {
+      "question": "What is a function?",
+      "answer": 3,
+      "options": [
+        "a variable that stores data",
+        "a condition that evaluates to true or false",
+        "a loop that iterates over elements",
+        "a section of reusable code",
+      ],
+      "selected": null
     }
 ]
 
