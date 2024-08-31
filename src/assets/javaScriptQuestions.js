@@ -306,6 +306,17 @@ const javaScriptQuestions = [
         "a section of reusable code",
       ],
       "selected": null
+    },
+    {
+      "question": "What is the difference between ...rest and ...spread?",
+      "answer": 2,
+      "options": [
+        "...rest is used for extracting remaining elements from an array, ...spread is used for combining elements into an array",
+        "...rest is used for creating functions, ...spread is used for invoking functions",
+        "...spread expands an array into separate elements, and ...rest bundles separate elements into an array",
+        "...spread works only with arrays, ...rest works only with objects"
+      ],
+      "selected": null
     }
 ]
 
