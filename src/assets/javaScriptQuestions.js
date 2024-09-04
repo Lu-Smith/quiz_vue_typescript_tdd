@@ -317,6 +317,17 @@ const javaScriptQuestions = [
         "...spread works only with arrays, ...rest works only with objects"
       ],
       "selected": null
+    },
+    {
+      "question": "What is a callback?",
+      "answer": 2,
+      "options": [
+        "a function that calls itself recursively",
+        "a function that returns another function",
+        "a function that is passed as an argument to another function",
+        "a function that is immediately invoked"
+      ],
+      "selected": null
     }
 ]
 
