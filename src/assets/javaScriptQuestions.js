@@ -328,6 +328,17 @@ const javaScriptQuestions = [
         "a function that is immediately invoked"
       ],
       "selected": null
+    },
+    {
+      "question": "What is an object?",
+      "answer": 0,
+      "options": [
+      "a collection of related properties and/or methods",
+      "a type of loop used to iterate over arrays",
+      "a data structure that holds only primitive values",
+      "a function that returns a value"
+      ],
+      "selected": null
     }
 ]
 
