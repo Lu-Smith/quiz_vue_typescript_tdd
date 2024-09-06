@@ -67,6 +67,7 @@ button {
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
     outline-color: transparent ;
     transition: 200ms all ease-in-out;
+    color: #0f0e0e;
 }
 
 button:hover {
@@ -77,7 +78,7 @@ button:hover {
 }
 
 .quiz {
-  width: 600px;
+  width: 650px;
   background: #2d4059; 
   padding: 10px 20px 30px 20px;
   margin: 50px auto;
@@ -86,35 +87,30 @@ button:hover {
 }
 
 .question {
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: 700;
 }
 
 .options {
-  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 10px;
+  padding: 20px;
 }
 
 label {
-  padding: 15px 20px;
   border-radius: 20px;
   transition: 200ms all ease-in-out;
   width: 100%;
-  text-align: left;
+  padding: 20px;
 }
 
 label:hover {
   background: rgba(100, 100, 100, 0.5);
 }
 
-input{
-  padding: 10px 20px;
-  margin-right: 20px
-}
 .correct {
   background: rgb(26, 138, 63);
 }
