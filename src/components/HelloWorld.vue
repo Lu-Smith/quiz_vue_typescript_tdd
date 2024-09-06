@@ -10,6 +10,7 @@
   </nav>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h3>Today is {{date}}☀️</h3>
   </div>
     <router-view/>
 </template>
@@ -31,8 +32,23 @@ export default {
         selectedSubject.value = '';
       }
     };
+    const year = ref(new Date().getFullYear());
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    const month = ref(months[new Date().getMonth()]);
+    const day = ref(new Date().getDate());
+    const date = ref("");
+    if ( day.value === 1 || day.value === 1) {
+      date.value = `${day.value}st of ${month.value}, ${year.value}`;
+    } else if ( day.value === 2 ) {
+      date.value = `${day.value}nd of ${month.value}, ${year.value}`;
+    } else if ( day.value === 3) {
+      date.value = `${day.value}rd of ${month.value}, ${year.value}`;
+    } else {
+      date.value = `${day.value}th of ${month.value}, ${year.value}`
+    }
+
     return {
-      selectedSubject, subjects, navigateToSubject
+      selectedSubject, subjects, navigateToSubject, date
     };
   }
 }
