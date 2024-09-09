@@ -20,8 +20,9 @@
           :name="'question-' + currentQuestion" 
           :value="index" 
           v-model="getCurrentQuestion.selected" 
-          @change="answerSelected">
-          <span>{{ option }}</span>
+          @change="answerSelected"
+        >
+        <span>{{ option }}</span>
       </label>
     </div>
     <button 
