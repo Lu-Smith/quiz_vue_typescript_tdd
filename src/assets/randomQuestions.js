@@ -14,6 +14,11 @@ const randomQuestions = [
     "explanation": "Data binding is a concept in software development that establishes a connection between the application's data (data source) and the user interface (UI) elements. Two common types of data binding are one-way data binding (from data source to UI) and two-way data binding (from data source to UI, and from UI to data source, ex v-model in Vue)",
     "selected": null
   },
+  {
+    "question": "What is XML?",
+    "explanation": "XML (eXtensible Markup Language) is a markup language used for encoding documents in a format that both humans and machines can read. XML tags are user-defined, meaning you can create your own tags to describe data. XML is platform-neutral, meaning it can be used across different software, hardware, and programming languages.",
+    "selected": null
+  },
 ];
-
+ 
 export default randomQuestions
