@@ -119,6 +119,61 @@ const typescriptQuestions = [
       "To define the routing and navigation structure of a TypeScript application."
     ],
     "selected": null
+  },
+  {
+    "question": "What is 'union' type in TypeScript?",
+    "answer": 1,
+    "options": [
+      "A way to combine two arrays into one in TypeScript.",
+      "A type that allows a variable to hold multiple types.",
+      "A keyword used to define asynchronous functions in TypeScript.",
+      "A built-in function for handling string manipulation in TypeScript."
+    ],
+    "selected": null
+  },
+  {
+    "question": "What is the difference between 'interface' and 'type' in TypeScript?",
+    "answer": 2,
+    "options": [
+      "There is no difference; they are completely interchangeable.",
+      "An 'interface' can extend a class, but a 'type' cannot.",
+      "An 'interface' is used for objects, while 'type' can be used for any structure, including unions.",
+      "A 'type' is used for built-in types, while 'interface' is used for user-defined types."
+    ],
+    "selected": null
+  },
+  {
+    "question": "What is a 'decorator' in TypeScript?",
+    "answer": 3,
+    "options": [
+      "A method used to handle event listeners in TypeScript.",
+      "A built-in function for modifying HTML elements in TypeScript.",
+      "A way to define the layout of a component in TypeScript.",
+      "A special kind of declaration that can be attached to a class, method, or property to modify its behavior."
+    ],
+    "selected": null
+  },
+  {
+    "question": "What is the purpose of 'enum' in TypeScript?",
+    "answer": 0,
+    "options": [
+      "To define a set of named constants that can represent a collection of related values.",
+      "To handle asynchronous operations in TypeScript.",
+      "To define a class that can be reused across components.",
+      "To configure the project's TypeScript compiler."
+    ],
+    "selected": null
+  },
+  {
+    "question": "How does TypeScript handle 'null' and 'undefined' types?",
+    "answer": 1,
+    "options": [
+      "'null' and 'undefined' are treated as the same in TypeScript.",
+      "By default, 'null' and 'undefined' are subtypes of all other types, but with strict null checks, they need to be explicitly handled.",
+      "They are automatically coerced into boolean values in TypeScript.",
+      "'null' is handled like an object, while 'undefined' is treated as a string."
+    ],
+    "selected": null
   }
 ];
 
