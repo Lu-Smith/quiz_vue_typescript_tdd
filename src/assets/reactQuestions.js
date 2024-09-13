@@ -252,6 +252,61 @@ const reactQuestions = [
     ],
     "selected": null
   },
+  {
+    "question": "What is the purpose of 'useRef()' hook in React?",
+    "answer": 2,
+    "options": [
+      "To manage component state without causing a re-render.",
+      "To create a mutable object to store values between renders.",
+      "To access DOM elements or persist values across renders without causing a re-render.",
+      "To memoize values and prevent unnecessary recalculations."
+    ],
+    "selected": null
+  },
+  {
+    "question": "What is the difference between state and props in React?",
+    "answer": 0,
+    "options": [
+      "State is used to manage internal data of a component, while props are used to pass data between components.",
+      "State is passed from parent to child components, while props are used to handle component lifecycle.",
+      "Props are mutable, while state is immutable.",
+      "Props trigger re-renders, but state does not."
+    ],
+    "selected": null
+  },
+  {
+    "question": "How can you prevent a component from re-rendering in React?",
+    "answer": 1,
+    "options": [
+      "By using 'useMemo()' for memoizing components.",
+      "By using 'React.memo()' to memoize functional components.",
+      "By using 'shouldComponentUpdate()' in functional components.",
+      "By using 'componentDidUpdate()' to manage re-renders."
+    ],
+    "selected": null
+  },
+  {
+    "question": "What is the purpose of 'useMemo()' in React?",
+    "answer": 3,
+    "options": [
+      "To create side effects in functional components.",
+      "To memoize functions and prevent them from being re-created on every render.",
+      "To handle errors and exceptions in functional components.",
+      "To memoize expensive calculations and avoid re-computation unless dependencies change."
+    ],
+    "selected": null
+  },
+  {
+    "question": "What are React portals used for?",
+    "answer": 2,
+    "options": [
+      "To manage global state across multiple components.",
+      "To optimize the performance of React applications.",
+      "To render child components into a DOM node outside the parent component's DOM hierarchy.",
+      "To fetch and manage data from external APIs in React."
+    ],
+    "selected": null
+  }
 ];
 
 export default reactQuestions;
