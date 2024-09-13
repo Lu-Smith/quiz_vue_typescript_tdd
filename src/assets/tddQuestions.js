@@ -119,6 +119,61 @@ const tddQuestions = [
       "The step where the test cleans up any resources used."
     ],
     "selected": null
+  },
+  {
+    "question": "How does TDD help with refactoring code?",
+    "answer": 1,
+    "options": [
+      "By encouraging developers to write more documentation.",
+      "By ensuring that tests catch any regressions when code is refactored.",
+      "By eliminating the need for unit tests.",
+      "By allowing developers to skip the testing phase."
+    ],
+    "selected": null
+  },
+  {
+    "question": "What is the role of mock objects in TDD?",
+    "answer": 0,
+    "options": [
+      "To simulate external dependencies and isolate the unit being tested.",
+      "To improve the performance of the system.",
+      "To automatically generate test cases.",
+      "To validate code without running actual tests."
+    ],
+    "selected": null
+  },
+  {
+    "question": "What does it mean to 'write just enough code' in TDD?",
+    "answer": 2,
+    "options": [
+      "Writing a full feature before testing it.",
+      "Writing extra code to handle edge cases before tests.",
+      "Writing only the minimal code needed to pass the current test.",
+      "Skipping the refactoring step to deliver code faster."
+    ],
+    "selected": null
+  },
+  {
+    "question": "How does TDD improve code design?",
+    "answer": 2,
+    "options": [
+      "By encouraging the use of design patterns.",
+      "By reducing the time spent writing code.",
+      "By forcing developers to think about code structure and behavior before implementation.",
+      "By ensuring that only experienced developers write tests."
+    ],
+    "selected": null
+  },
+  {
+    "question": "What kind of tests are typically written first in TDD?",
+    "answer": 0,
+    "options": [
+      "Unit tests",
+      "Integration tests",
+      "Acceptance tests",
+      "End-to-end tests"
+    ],
+    "selected": null
   }
 ];
 
