@@ -350,7 +350,62 @@ const pythonQuestions = [
             "set"
         ],
         "selected": null
-    }
+    },
+    {
+        "question": "What is a list comprehension in Python?",
+        "answer": 1,
+        "options": [
+          "A way to define a function inline.",
+          "A concise way to create lists based on existing iterables.",
+          "A method to optimize loop performance.",
+          "A technique for asynchronous programming."
+        ],
+        "selected": null
+      },
+      {
+        "question": "What is the purpose of 'global' keyword in Python?",
+        "answer": 0,
+        "options": [
+          "To declare that a variable inside a function is global.",
+          "To declare a variable that can be accessed from other modules.",
+          "To create a global constant.",
+          "To define a global scope for all variables."
+        ],
+        "selected": null
+      },
+      {
+        "question": "Which module in Python is used to work with regular expressions?",
+        "answer": 2,
+        "options": [
+          "math",
+          "collections",
+          "re",
+          "os"
+        ],
+        "selected": null
+      },
+      {
+        "question": "How do you check if a key exists in a dictionary?",
+        "answer": 1,
+        "options": [
+          "if key in dict.values()",
+          "if key in dict",
+          "if dict.has_key(key)",
+          "if key.dict()"
+        ],
+        "selected": null
+      },
+      {
+        "question": "Which of the following functions can be used to get the current time in Python?",
+        "answer": 3,
+        "options": [
+          "datetime.now()",
+          "time.get_time()",
+          "time()",
+          "time.time()"
+        ],
+        "selected": null
+      }
 ]
 
 export default pythonQuestions
