@@ -64,6 +64,11 @@ const randomQuestions = [
     "explanation": "`WHERE` is used to filter records before any grouping takes place in an SQL query, while `HAVING` is used to filter records after the `GROUP BY` clause. In other words, `WHERE` is used to filter rows, and `HAVING` is used to filter groups created by the `GROUP BY` clause. For example, you can use `HAVING` to filter results based on aggregate functions like `COUNT()`, `SUM()`, etc.",
     "selected": null
   },
+  {
+    "question": "What is a stored procedure?",
+    "explanation": "A stored procedure is a precompiled collection of SQL statements stored in the database that can be executed as a single unit. Stored procedures allow for code reusability, better security (since users can execute the procedure without knowing the underlying SQL), and improved performance (as the SQL code is precompiled). They can accept parameters, return values, and contain complex logic such as loops and conditional statements.",
+    "selected": null
+  }
 ];
  
 export default randomQuestions
