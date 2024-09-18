@@ -405,6 +405,17 @@ const pythonQuestions = [
           "time.time()"
         ],
         "selected": null
+      },
+      {
+        "question": "Which of the following statement is not true?",
+        "answer": 2,
+        "options": [
+          "List = [] ordered and changeable. Duplicates OK",
+          "Set = {} unordered and immutable. No duplicates",
+          "List = [] ordered and changeable. No duplicates",
+          "Tuple = () ordered and unchangeable. Duplicates OK"
+        ],
+        "selected": null
       }
 ]
 
