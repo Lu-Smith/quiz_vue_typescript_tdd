@@ -416,6 +416,17 @@ const pythonQuestions = [
           "Tuple = () ordered and unchangeable. Duplicates OK"
         ],
         "selected": null
+      },
+      {
+        "question": "What is called an object/collection that can return its elements one at a time?",
+        "answer": 0,
+        "options": [
+          "iterables",
+          "generators",
+          "sequences",
+          "mappings"
+        ],
+        "selected": null
       }
 ]
 
