@@ -427,6 +427,17 @@ const pythonQuestions = [
           "mappings"
         ],
         "selected": null
+      },
+      {
+        "question": "What is used to test whether a value or variable is found in a sequence (string, list, tuple, or dictionary)?",
+        "answer": 0,
+        "options": [
+          "Membership operatiors (in, not in)",
+          "Comparison operators (==, !=, >, <)",
+          "Logical operators (and, or, not)",
+          "Identity operators (is, is not)"
+        ],
+        "selected": null
       }
 ]
 
