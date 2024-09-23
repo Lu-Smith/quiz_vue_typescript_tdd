@@ -449,6 +449,28 @@ const pythonQuestions = [
           "decorator"
         ],
         "selected": null
+      },
+      {
+        "question": "What is multithreading used for?",
+        "answer": 2,
+        "options": [
+          "To run a single task faster",
+          "To make a program run on different machines",
+          "to perform multiple task concurrently (multitaskig)",
+          "To execute code in parallel on different cores"
+        ],
+        "selected": null
+      },
+      {
+        "question": "What GUI stands for?",
+        "answer": 2,
+        "options": [
+          "General User Interface",
+          "Graph Unit Interface",
+          "Graphical User Interface",
+          "Global Unified Interface"
+        ],
+        "selected": null
       }
 ]
 
