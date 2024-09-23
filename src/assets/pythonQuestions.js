@@ -438,6 +438,17 @@ const pythonQuestions = [
           "Identity operators (is, is not)"
         ],
         "selected": null
+      },
+      {
+        "question": "How is called a function that extends the behavior of another function?",
+        "answer": 3,
+        "options": [
+          "callback",
+          "higher-order function",
+          "closure",
+          "decorator"
+        ],
+        "selected": null
       }
 ]
 
