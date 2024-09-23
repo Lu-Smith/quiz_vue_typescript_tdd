@@ -141,7 +141,7 @@ const reactQuestions = [
       "renderState()"
     ],
     "selected": null
-  }
+  },
   {
     "question": "What is a higher-order component (HOC) in React?",
     "answer": 0,
