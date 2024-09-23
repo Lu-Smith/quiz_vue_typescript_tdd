@@ -44,7 +44,7 @@ const reactQuestions = [
     "selected": null
   },
   {
-    "question": "What is the purpose of 'setState()' in React?",
+    "question": "What is the purpose of 'useState()' in React?",
     "answer": 2,
     "options": [
       "To import external libraries and packages in React components.",
@@ -132,16 +132,16 @@ const reactQuestions = [
     "selected": null
   },
   {
-    "question": "What does 'render()' method do in a React class component?",
+    "question": "Which of the following is a React lifecycle method?",
     "answer": 1,
     "options": [
-      "It initializes state and props for the component.",
-      "It returns the JSX that defines the component's UI.",
-      "It manages side effects and lifecycle events.",
-      "It handles user inputs and interactions."
+      "useState()",
+      "componentDidMount()",
+      "useEffect()",
+      "renderState()"
     ],
     "selected": null
-  },
+  }
   {
     "question": "What is a higher-order component (HOC) in React?",
     "answer": 0,
