@@ -71,7 +71,7 @@ const randomQuestions = [
   },
   {
     "question": "What are OOP?",
-    "explanation": "Object Oriented Programs",
+    "explanation": "Object-Oriented Programming. OOP is a programming paradigm based on the concept of 'objects', which can contain data in the form of fields and code in the form of methods.",
     "selected": null
   }
 ];
