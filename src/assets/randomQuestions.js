@@ -68,6 +68,11 @@ const randomQuestions = [
     "question": "What is a stored procedure?",
     "explanation": "A stored procedure is a precompiled collection of SQL statements stored in the database that can be executed as a single unit. Stored procedures allow for code reusability, better security (since users can execute the procedure without knowing the underlying SQL), and improved performance (as the SQL code is precompiled). They can accept parameters, return values, and contain complex logic such as loops and conditional statements.",
     "selected": null
+  },
+  {
+    "question": "What are OOP?",
+    "explanation": "Object Oriented Programs",
+    "selected": null
   }
 ];
  
